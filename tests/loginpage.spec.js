@@ -38,4 +38,5 @@ test('Login and Purchase iPhone', async ({ page }) => {
   // Wait and click Submit button
   await page.waitForLoadState('networkidle');
   await locators.submitButton(page).click();
+  await page.pause();
 });
